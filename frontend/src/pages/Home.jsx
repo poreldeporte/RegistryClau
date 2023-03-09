@@ -1,23 +1,22 @@
-import { FaUser } from 'react-icons/fa'
-import RegisterForm from '../components/RegisterForm'
+import LoginForm from "../components/LoginForm";
+import { FaRegHeart } from 'react-icons/fa'
 
-function Register() {
+function Login() {
 
   return (
     <>
       <div className='login-container-bg'>
         <div className='container'>
           <div className='login-box'>
+
             <section className='heading'>
-              <FaUser />
+              <FaRegHeart />
               <h1>
-                Register
+                Build-A-Registry
               </h1>
-              <p>Please create an account</p>
+              <p>Login or sign up to start building</p>
             </section>
-
-            <RegisterForm />
-
+            <LoginForm />
           </div>
         </div>
       </div>
@@ -25,4 +24,4 @@ function Register() {
   )
 }
 
-export default Register
+export default Login
